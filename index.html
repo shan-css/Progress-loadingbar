@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	.div
+	{
+		display: flex;
+    align-items: center;
+	}
+.progress-bar-outer {
+  width: 300px;
+  height: 10px;
+  flex: auto;
+  margin-top:0px; 
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5em;
+  overflow: hidden;
+  background-color: gray;
+}
+.change
+{
+  color: gray;
+}
+.progress-bar-inner {
+  /* You can change the `width` to change the amount of progress. */
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  animation:loadbar 2s;
+  -webkit-animation:loadbar 2s;
+}
+.progress-bar-inner2 {
+  /* You can change the `width` to change the amount of progress. */
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  -webkit-animation: loadbar 2s ease 2s forwards;
+  animation: loadbar 2s ease 2s forwards
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  opacity:0;
+}
+.progress-bar-inner3 {
+  /* You can change the `width` to change the amount of progress. */
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  -webkit-animation: loadbar 2s ease 2s forwards;
+  animation: loadbar 2s ease 2s forwards
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  opacity:0;
+}
+.progress-bar-inner4 {
+  /* You can change the `width` to change the amount of progress. */
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  -webkit-animation: loadbar 2s ease 2s forwards;
+  animation: loadbar 2s ease 2s forwards
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  opacity:0;
+}
+.progress-bar-inner5 {
+  /* You can change the `width` to change the amount of progress. */
+ width: 100%;
+  height: 100%;
+  background-color: green;
+  -webkit-animation: loadbar 2s ease 2s forwards;
+  animation: loadbar 2s ease 2s forwards
+  animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+  opacity:0;
+}
+
+@keyframes loadbar {
+    0% { width: 0%;left:0;right:0}
+    1% { opacity: 1}
+    100% { opacity: 1}
+}
+</style>
+<body>
+	<div class="div">
+<div class="progress-bar-outer">
+  <div class="progress-bar-inner">
+  </div>
+ </div>
+<div class="change">
+	<span class="one">A</span>
+</div>
+ 
+<div class="progress-bar-outer">
+    <div class="progress-bar-inner2">
+  </div>
+  </div>
+  <span class="two">B</span>
+
+<div class="progress-bar-outer">
+    <div class="progress-bar-inner3">
+  </div>
+</div>
+ <span class="3">C</span>
+
+<div class="progress-bar-outer">
+    <div class="progress-bar-inner4">
+  </div>
+</div>
+ <span class="4">D</span>
+
+<div class="progress-bar-outer">
+    <div class="progress-bar-inner5">
+  </div>
+</div>
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var dd = $('.progress-bar-outer').width();
+	var dd3 = $('.progress-bar-inner3').width();
+	var dd2 = $('.progress-bar-inner2').width();
+	var dd1 = $('.progress-bar-inner').width();
+	console.log(dd1)
+	console.log(dd2)
+	console.log(dd3)
+	console.log(dd)
+	
+	
+</script>
+
+</html>
